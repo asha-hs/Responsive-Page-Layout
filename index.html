@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Asha-Portfolio</title>
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -30,16 +32,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand">Media</a>
+          <a href="#" class="navbar-brand">Asha Hakari</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#client">Client</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <li><a href="#header">About</a></li>
+            <li><a href="#services">Work</a></li>
+            <li><a href="#pricing">Skills</a></li>
+            <li><a href="#team">Testimonials</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+
           </ul>
         </div>
       </div>
@@ -49,16 +52,18 @@
       <div id="header" class="header">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 wow bounceInLeft">
-              <h1>Responsive Web Design</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's standard dummy text ever since the 1500s,
-              </p>
-              <button class="btn btn-lg btn-primary">Buy Now</button>
-              <button class="btn btn-lg btn-primary">View Detail</button>
+            <div class="col-lg-8 col-md-8 wow bounceInLeft">
+
+                <h1>Software Engineer and Front End Developer</h1>
+                <p>Self-motivated programmer and Software Development and Web Development professional with 5+
+                  years of experience in Sofware Development and 1 year experience in Web Development looking for programming work to utilizing my experience,skills and computer science abilities.
+                </p>
+
+              <button class="btn btn-lg btn-primary" onclick="document.getElementById('services').scrollIntoView();">View Portfolio</button>
+              <button class="btn btn-lg btn-primary" onclick="document.getElementById('contact').scrollIntoView();">Contact Me</button>
             </div>
-            <div class="col-lg-6 col-md-6 wow bounceInRight">
-              <img src="images/responsive_web_design.jpg">
+            <div class="col-lg-4 col-md-4 wow bounceInRight">
+              <img src="images/my_avatar.jpg">
             </div>
           </div>
         </div>
@@ -67,10 +72,73 @@
 <!--Services-->
 <div class="services" id="services">
   <div class="container">
-    <h2 class="wow fadeInUp">Services</h2>
-    <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="works-header">
+      <h2 class="wow fadeInUp">My Works</h2>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">These are some of my works.</p>
+    </div>
     <div class="row">
-      <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+      <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="0.2s">
+        <img src="images/upc_work.png" alt="upc-epg-work" style="width:100%">
+      </div>
+      <div class="col-lg-6 col-md-6 work-description wow bounceInRight" data-wow-delay="0.4s">
+        <p><b>UI development of Television EPG </b><br />Television EPG (Electronic Programmer Guide) Application development:
+Worked on UI development for Set top box software (EPG) development using Flash,
+ Actionscript3.0, JavaScript, HTML5, CSS for the client UPC Horizon, Netherlands.
+        </p>
+        <h4>My Responsibilities includes:</h4>
+        <ul>
+          <li>Overall application development and peer review.</li>
+          <li>Validating and providing estimations for feature requirements to architecture and client team as required.
+            These teams were spread across India, France, Israel, and Netherlands.</li>
+          <li>Translate client/design team user stories to code in adherence to coding and design guidelines.</li>
+          <li>Planning and executing test plans (ex: unit testing, fitness) for code quality and maintenance.</li>
+        </ul>
+      </div>
+    </div> <!--End of row-->
+    <hr/>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 work-description wow bounceInLeft" data-wow-delay="0.6s">
+        <p><b>Book Store Application</b><br/>
+          This is a full RESTfull web api implementation which will allow us to get,post,put and delete
+          JSON data through HTTP requests.
+        </p>
+        <h4>My Responsibilities includes:</h4>
+        <ul>
+          <li>Developed from scratch</li>
+          <li>Used NodeJS and Mongodb for backend</li>
+          <li>AngularJS for Front end framework.</li>
+          <li>Implemented to understand MEAN stack.</li>
+        </ul>
+
+      </div>
+      <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="0.8s">
+      <a href="http://localhost:3000/#/books" target="_blank"><img src="images/book_store.png" alt="upc-epg-work" style="width:100%"></a>
+      </div>
+    </div> <!--End of row-->
+    <hr/>
+    <div class="row ">
+      <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="1.0s">
+          <img src="images/safepassage2.png" alt="safepassage-work" style="width:100%">
+      </div>
+      <div class="col-lg-6 col-md-6 work-description wow bounceInRight" data-wow-delay="1.2s">
+        <p>Safe Passage International - Airline Security Training Application
+This is an advanced airline security training software used in detecting threat items and explosive devices.
+It is also a complete simulator and operator training course for an advanced computer-tomography(CT) scanner used by airports to automatically detect explosives in passenger’s luggage.
+It is a standalone desktop application developed using AS2, Flash and swfstudio and ms access as local database.
+        </p>
+        <h4>My Responsibilities includes:</h4>
+        <ul>
+          <li>Front End Developer</li>
+          <li>Developing front-end in AS2, Flash CS4, and JavaScript.</li>
+          <li>Interacting with local MS access database through swfstudio.</li>
+          <li>And getting the query result for displaying.</li>
+        </ul>
+
+
+      </div>
+    </div> <!--End of row-->
+    <hr/>
+  <!--    <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
         <i class="fa fa-desktop" aria-hidden="true"></i>
           <h4>Web Design</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -89,9 +157,9 @@
         <i class="fa fa-university" aria-hidden="true"></i>
           <h4>Consulting</h4>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-    </div>
-  </div>
+      </div> -->
+
+  </div><!--End of Container -->
 
 </div>
 
@@ -99,70 +167,89 @@
 <!-- Pricing Section -->
 <div class="pricing" id="pricing">
   <div class="container">
+    <div class="skills-header">
+      <h2 class="wow fadeInUp">Skills</h2>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">These are my skills and I am comfortable working with</p>
+
+    </div>
       <div class="row">
-          <h2 class="wow fadeInUp">Pricing</h2>
-          <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+
+       <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
             <div class="packages">
-              <h4>Bronze</h4>
-              <h1>9.99</h1>
-              <b>Monthly</b>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h4>HTML5</h4>
+              <h3>Basic Expertise</h3>
+              <b>1 year</b>
+              <p>Good understanding of semantic tags,webstorage,Canvas,SVG and other new capabilities of HTML5</p>
               <hr>
-              <li>100 Users</li>
-              <li>SSL Certified</li>
-              <li>Online Support</li>
-              <li>1000 Email Address</li>
-              <li>MYSQL database</li>
-              <button class="btn btn-success">Get Started</button>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
             <div class="packages">
-              <h4>Silver</h4>
-              <h1>19.99</h1>
-              <b>Monthly</b>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h4>CSS3</h4>
+              <h3>Basic Expertise</h3>
+              <b>1 year</b>
+              <p>Good understanding of CSS3 and basic knowledge on CSS Preprocessors</p>
               <hr>
-              <li>100 Users</li>
-              <li>SSL Certified</li>
-              <li>Online Support</li>
-              <li>1000 Email Address</li>
-              <li>MYSQL database</li>
-              <button class="btn btn-success">Get Started</button>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
             <div class="packages">
-              <h4>Gold</h4>
-              <h1>29.99</h1>
-              <b>Monthly</b>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h4>JavaScript</h4>
+              <h3>Basic Expertise</h3>
+              <b>1 year</b>
+              <p>Good at implementing solutions using Javascript. Concentrating to become expert with javascript both as front end and back end programming language</p>
               <hr>
-              <li>100 Users</li>
-              <li>SSL Certified</li>
-              <li>Online Support</li>
-              <li>1000 Email Address</li>
-              <li>MYSQL database</li>
-              <button class="btn btn-success">Get Started</button>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
             <div class="packages">
-              <h4>Premium</h4>
-              <h1>39.99</h1>
-              <b>Monthly</b>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h4>AngularJS</h4>
+              <h3>Basic Expertise</h3>
+              <b>1 year</b>
+              <p>Good at designing Client side using AngularJS framework. Good understandind of AngularJS components and syntax.</p>
               <hr>
-              <li>100 Users</li>
-              <li>SSL Certified</li>
-              <li>Online Support</li>
-              <li>1000 Email Address</li>
-              <li>MYSQL database</li>
-              <button class="btn btn-success">Get Started</button>
             </div>
           </div>
-</div>
+        </div> <!-- end of row-->
+        <div class="row">
+
+         <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+              <div class="packages">
+                <h4>jQuery</h4>
+                <h3>Basic Expertise</h3>
+                <b>1 year</b>
+                <p>Good understanding of jQuery library. Used during DOM manipulation,asynchronous communication of client and server, JSON parsing etc.</p>
+                <hr>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+              <div class="packages">
+                <h4>Bootstrap</h4>
+                <h3>Basic Expertise</h3>
+                <b>1 year</b>
+                <p>Good Understanding of Bootstrap framework. Easy to layout and style responsive pages using bootstrap</p>
+                <hr>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
+              <div class="packages">
+                <h4>AJAX</h4>
+                <h3>Basic Expertise</h3>
+                <b>1 year</b>
+                <p>Fun to work with AJAX. Good understanding of request types, response, and events triggered for Success and error.</p>
+                <hr>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
+              <div class="packages">
+                <h4>MEAN Stack</h4>
+                <h3>Basic Expertise</h3>
+                <b>1 year</b>
+                <p>Recently started understanding MEAN Stack. Since it completly uses javascript. Developed couple of apps for better understanding.</p>
+                <hr>
+              </div>
+            </div>
+          </div> <!--end of row-->
 </div>
 </div>
 <!-- End of Pricing -->
@@ -170,13 +257,13 @@
 <div class="team" id="team">
   <div class="container">
     <div class="row">
-      <h2 class="wow fadeInUp">Meet our team</h2>
-      <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h2 class="wow fadeInUp">Testimonials</h2>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">What people say about me whom I worked with</p>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="2s">
           <img src="images/team_member1.jpg" class="img-circle">
-          <h4>John Emily</h4>
-          <b>CEO and founder</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h4>Sushma Rai</h4>
+          <b>Project Manager</b>
+          <p>Not only was Asha’s work on-time and to spec, she pays attention to improve the UI of the product as well as the functionality. Throughout the entire process she is responsive, and willing to work through issues as they arise. It’s obvious she takes tremendous pride in her work, and I wouldn’t hesitate to recommend or work with her again.</p>
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -184,9 +271,9 @@
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
           <img src="images/team_member2.jpg" class="img-circle">
-          <h4>John Emily</h4>
-          <b>CEO and founder</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h4>Balasubramanian</h4>
+          <b>Project Manager</b>
+          <p>Asha’s talent and experience proved immensely valuable for our latest web project. She was involved from the very beginning of any feature development . The work we received from her was tested, well documented, and full of touches that shows her commitment to quality. I can’t recommend her highly enough.</p>
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -194,9 +281,9 @@
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
           <img src="images/team_member3.jpg" class="img-circle">
-          <h4>John Emily</h4>
-          <b>CEO and founder</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h4>Guylaine Scott</h4>
+          <b>Project Manager France Team</b>
+          <p>We have the fortune of working with Asha on a very regular basis. Every single assignment is done in a timely fashion and is delivered exactly as is outlined. Beyond that, her development skills and expertise make her an invaluable part of our process. We absolutely offer our highest possible recommendation.</p>
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -204,9 +291,9 @@
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
           <img src="images/team_member4.jpg" class="img-circle">
-          <h4>John Emily</h4>
-          <b>CEO and founder</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <h4>Seydou Ba</h4>
+          <b>Scrum Master France Team</b>
+          <p>Working with Asha was better than expected and we had really high expectations. She is an incredibly talented developer but what really makes her stand out is her work ethic and steady approach. Time after time, and without us asking, she added enhancements and improvements that resulted in a better end product for our clients.</p>
           <a href="#"><i class="fa fa-facebook"></i></a>
           <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -221,18 +308,18 @@
   <div class="container">
     <div class="row">
       <h2 class="wow fadeInUp">Clients</h2>
-      <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">Clents I worked with.</p>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="2s">
-        <li><img src="images/client_1.jpg" alt=""></li>
+        <li><img src="images/upc_logo.jpeg" alt=""></li>
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft"  data-wow-delay="1.6s">
-        <li><img src="images/client_2.jpg" alt=""></li>
+        <li><img src="images/sagepassage_logo.jpeg" alt=""></li>
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
-        <li><img src="images/client_3.jpg" alt=""></li>
+        <li><img src="images/shell_elearning_logo.png" alt=""></li>
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8">
-        <li><img src="images/client_4.jpg" alt=""></li>
+        <li><img src="images/at&t_logo.jpeg" alt=""></li>
       </div>
     </div>
   </div>
@@ -243,7 +330,7 @@
   <div class="container">
     <div class="row">
       <h2 class="wow fadeInUp">Contact</h2>
-      <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">Leave me a message,I will get back to you soon.</p>
       <div class="col-lg-6 col-md-6">
         <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
           <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -273,29 +360,23 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4">
-        <h4>Contact Us</h4>
-        <p><i class="fa fa-home" aria-hidden="true"></i>#1121, Washington DC</p>
-          <p><i class="fa fa-email" aria-hidden="true"></i>info@media.com</p>
-          <p><i class="fa fa-phone" aria-hidden="true"></i>+1 222 222 2222</p>
-          <p><i class="fa fa-globe" aria-hidden="true"></i>www.media.com</p>
+        <h4>Contact Me</h4>
+        <p><i class="fa fa-home" aria-hidden="true"></i>#1215, Seattle,WA </p>
+          <p><i class="fa fa-email" aria-hidden="true"></i>asha.hakari@gmail.com</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>+1 206 605 6456</p>
+          <p><i class="fa fa-globe" aria-hidden="true"></i>ashahakari.com</p>
       </div>
-      <div class="col-lg-4 col-md-4">
-        <h4>About Us </h4>
-        <p><i class="fa fa-square-o" aria-hidden="true"></i>About Us</p>
-        <p><i class="fa fa-square-o" aria-hidden="true"></i>Privacy</p>
-        <p><i class="fa fa-square-o" aria-hidden="true"></i>Term & Condition</p>
+      <div class="col-lg-4 col-md-4" style="padding-top:50px;">
+        <p>All rights Reserved Asha Hakari &copy; 2017</p>
       </div>
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4" style="text-align:right;">
         <h4>Stay In Touch</h4>
-        <i class="social fa fa-facebook" aria-hidden="true"></i>
-        <i class="social fa fa-twitter" aria-hidden="true"></i>
-        <i class="social fa fa-linkedin" aria-hidden="true"></i>
-        <i class="social fa fa-pinterest" aria-hidden="true"></i>
-        <i class="social fa fa-youtube" aria-hidden="true"></i>
-        <i class="social fa fa-github" aria-hidden="true"></i>
+        <a href=""><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="social fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href=""><i class="social fa fa-github" aria-hidden="true"></i></a>
         <br/>
-        <input type="email" placeholder="Subscribe for updates">
-        <button  class="btn btn-success">Subscribe</button>
+
       </div>
     </div>
   </div>

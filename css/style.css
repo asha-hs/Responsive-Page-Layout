@@ -8,10 +8,11 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing:antialiased !important;
 }
-li {
+
+/*li {
   line-style:none;
   display: inline-block;
-}
+}*/
 a {
   text-decoration: none;
   transition: all 500ms ease-in-out;
@@ -33,6 +34,7 @@ p{
   transform: all 300ms ease-in-out;
   font-weight: 500 !important;
   text-transform: uppercase;
+  border-radius: 15px !important;
 }
 .btn:hover {
   background-color: #ededed !important;
@@ -63,24 +65,39 @@ p{
   width: 100%;
   padding: 30px 0 30px;
   margin-top: 50px;
-  background-image: url(../images/bg_1.jpg);
-  background-position: center center;;
-  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif !important;
+
+  background-image: url(../images/header_bg_animate.jpg);
+  background-position: center center;
+  background-repeat: repeat;
   background-size: cover;
+  animation: animate-background linear 15s infinite;
   color: #fff;
 }
+@keyframes animate-background {
+  from { background-position: 0px 0px;}
+  to { background-position: 0px -300px;}
+}
 .header img {
-  height: 300px;
-  width: 450px;
+  height: 150px;
+  width: 250px;
   margin: 70px 0 0 40px;
 }
 .header h1 {
   font-size: 40px;
   font-weight: 700;
+
   padding-top: 30px;
+  text-decoration: none ;
 }
+.header p {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
 .header h1, .header p, header button {
   margin-top: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .header .btn {
   border-radius: 0;
@@ -113,17 +130,25 @@ p{
 /* Services */
 .services {
   padding: 80px 0 80px;
-  text-align: center;
+  /*text-align: center;*/
 }
 .services h2,.services.h4 {
   color: #4c4c4c;
-  margin: 20px 0 20px;
+  margin: 0px 0 20px;
+}
+.works-header {
+  text-align: center;
 }
 .services p {
   color: #737373;
   font-size: 14px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+
 }
+.work-description p{
+  padding-top: 0px;
+}
+
 .services i {
   height: 80px;
   width: 80px;
@@ -133,6 +158,11 @@ p{
   background-color: #6699cc;
   color: #fff;
 }
+.services img {
+  width: 100%;
+  height: 250px;
+}
+
 @media(max-width:768px) {
   .services{
     padding: 30px;
@@ -164,8 +194,29 @@ p{
   padding: 5px;
 
 }
-.packages h4,.packages h1, .packages b {
+.pricing i {
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  padding: 25px 20px;
+  border-radius: 50%;
+  background-color: #af9956;
+  color: #fff;
+}
+
+
+.packages h4,.packages h3, .packages b {
   color: #4c4c4c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.packages p {
+
+    height: 70px;
+    vertical-align: bottom;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 .packages li, .packages p {
   color: #737373;
@@ -237,6 +288,10 @@ p{
 }
 .clients li:hover img {
   opacity: 1;
+}
+.clients li {
+  line-style:none;
+  display: inline-block;
 }
 
 /*Contact*/
